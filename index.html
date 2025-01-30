@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pete_dennis_online</title>
+    <style>
+        body {
+            font-family: 'Monospace', monaco;
+            background-color: #d3c0ed;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #a393ba;
+            color: #333;
+            text-align: center;
+            padding: 1em 0;
+        }
+        section {
+            padding: 2em;
+        }
+        .video-placeholder {
+            width: 800px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .video-container {
+            position: relative;
+            text-align: center;
+        }
+        .bio, .events, .contact {
+            margin-top: 2em;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+        }
+        .contact form input, .contact form textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            font-size: 1em;
+        }
+        .contact form button {
+            padding: 0.5em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .links a {
+            color: black;
+        }
+        .links a:visited {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Search for the Infinite Light</h1>
+        <h3>songs and communications page</h3>
+    </header>
+    <section class="video-container">
+        <h2>Broadcast Station</h2>
+        <img src="profpic.jpg" alt="Placeholder Image" class="video-placeholder">
+        <iframe width="800" height="600" src="https://www.youtube.com/embed/live_stream?channel=delaney_van_parys" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section class="bio">
+        <h2>Bio</h2>
+        <p>I am a musician, artist, and programmer. Given the rise of the fascist technocratic oligarchy
+            I am choosing to reclaim some level of control over online prescence. Many artists feel trapped
+            into social media spaces as a way to let their friends know about their art. I'm deciding to make
+            my attempt at breaking this paradigm by creating a website where I can live stream music, link to
+            my bandcamp, and talk with my friends. Yes, all online communications with me will be directed through
+            this website and the email attached to it. Below are my upcoming live dates.
+        </p>
+    </section>
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>Matt Lavelle Quartet, Black Squirrel Club - 2/16</li>
+            <li>Carlos Santiago Trio, Fire Museum - 2/23</li>
+            <li>Stan Zenkov Trio, Christ Church Bural, Old City - 6/7</li>
+        </ul>
+    </section>
+    <section class="links">
+        <h2>Links</h2>
+        <a href="https://sftil.bandcamp.com/">My Bandcamp</a>
+        <a href="https://spectralforces.bandcamp.com/album/the-universe-is-within-who">Spectral Forces Bandcamp</a>
+        <a href="https://www.youtube.com/@delaney_van_parys">Live-Coding Youtube</a>
+        <a href="https://www.youtube.com/@searchfortheinfinitelight6890">Bass Youtube</a>
+    </section>
+    <section class="contact">
+        <h2>Contact Me (searchfortheinfinitelight@gmail.com)</h2>
+        <h3>for booking, lessons, tech stuff, just to talk, etc.</h3>
+        <form action="/contact" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
